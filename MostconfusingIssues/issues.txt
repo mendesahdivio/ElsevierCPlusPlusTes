@@ -1,0 +1,19 @@
+
+
+
+1} Facing a crash in iOS due to overuse of [PHImageManager defaultManager] in iOS via c++ with default rather and trying to auto release it causing a random crash due to auto releasing memory that is was being used by some other process in the application since this method returns the instance of the manager that is being used in other places in the app
+
+Solution: I solved this by creating a new instance of PHImageManager using the normal initialiser then auto releasing it this solved the issue since we were now using another instance of it rather then the common instance.
+
+
+
+2} When trying to convert HEIC to Jpeg :
+
+So initially we were using jpeg format only in our sdk for which I used to convert the image one by one and then do the inference on it via the c++ code sdk from the framework which I found slow and difficult to convert high resolution heic to jpeg.
+
+Solution: So I wrote code in swift to create a custom URL using the unique ID of the image that apple provides and pass that to the sdk via the json api and then use the pHIManager to load the image in cv mat in c++ and use Core Image to load the image as CGImage and then load it as a cv mat and do a pass by reference.
+
+
+3} when trying to call the Pthread when the sigleton class instance was killed by the OS in iOS
+
+Solution: This was by far the most weird issue since the OS of iOS used to kill the instance of the class that was acting as the recipient for the api request and then trying to call the mutex lock to perform a specific api request was causing a Pthread crash which didn't make sense because sometimes the crashes were random at the sql lite prepared statement execution or sometimes at the start of the api itself so I made the api signatures to contain error:(NSError **)error __attribute__((swift_error(nonnull_error)) that would throw an error from the sdk side if the instance of the internal class calling the api was null.
