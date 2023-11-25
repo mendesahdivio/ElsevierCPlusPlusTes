@@ -17,6 +17,7 @@ public:
         : filename(std::move(filename)), blockSize(block_size), hasher(std::move(hasher)) {}
 
     void hashFile() {
+        std::cout << "this is the file name from the input >> " << filename << std::endl;
         std::ifstream file(filename, std::ios::binary);
         if (!file.is_open()) {
             std::cerr << "Error opening file: " << filename << std::endl;
@@ -50,6 +51,7 @@ private:
 
         std::lock_guard<std::mutex> lock(mutex);
         output << result << std::endl;
+        std::cout <<  "this is the output string from the hasher >>> " << result << std::endl;
     }
 
     std::string filename;

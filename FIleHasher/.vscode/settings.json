@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "strstream": "cpp"
+        "strstream": "cpp",
+        "fstream": "cpp"
     }
 }
