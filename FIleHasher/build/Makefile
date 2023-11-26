@@ -153,6 +153,30 @@ Hasher/FileHasherManager/FileHasher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileHasherProg.dir/build.make CMakeFiles/FileHasherProg.dir/Hasher/FileHasherManager/FileHasher.cpp.s
 .PHONY : Hasher/FileHasherManager/FileHasher.cpp.s
 
+Hasher/FileSystem/FileSystem.o: Hasher/FileSystem/FileSystem.cpp.o
+.PHONY : Hasher/FileSystem/FileSystem.o
+
+# target to build an object file
+Hasher/FileSystem/FileSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileHasherProg.dir/build.make CMakeFiles/FileHasherProg.dir/Hasher/FileSystem/FileSystem.cpp.o
+.PHONY : Hasher/FileSystem/FileSystem.cpp.o
+
+Hasher/FileSystem/FileSystem.i: Hasher/FileSystem/FileSystem.cpp.i
+.PHONY : Hasher/FileSystem/FileSystem.i
+
+# target to preprocess a source file
+Hasher/FileSystem/FileSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileHasherProg.dir/build.make CMakeFiles/FileHasherProg.dir/Hasher/FileSystem/FileSystem.cpp.i
+.PHONY : Hasher/FileSystem/FileSystem.cpp.i
+
+Hasher/FileSystem/FileSystem.s: Hasher/FileSystem/FileSystem.cpp.s
+.PHONY : Hasher/FileSystem/FileSystem.s
+
+# target to generate assembly for a file
+Hasher/FileSystem/FileSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileHasherProg.dir/build.make CMakeFiles/FileHasherProg.dir/Hasher/FileSystem/FileSystem.cpp.s
+.PHONY : Hasher/FileSystem/FileSystem.cpp.s
+
 Hasher/HasherInterface.o: Hasher/HasherInterface.cpp.o
 .PHONY : Hasher/HasherInterface.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... Hasher/FileHasherManager/FileHasher.o"
 	@echo "... Hasher/FileHasherManager/FileHasher.i"
 	@echo "... Hasher/FileHasherManager/FileHasher.s"
+	@echo "... Hasher/FileSystem/FileSystem.o"
+	@echo "... Hasher/FileSystem/FileSystem.i"
+	@echo "... Hasher/FileSystem/FileSystem.s"
 	@echo "... Hasher/HasherInterface.o"
 	@echo "... Hasher/HasherInterface.i"
 	@echo "... Hasher/HasherInterface.s"

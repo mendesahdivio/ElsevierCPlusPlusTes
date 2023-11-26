@@ -81,12 +81,12 @@ clean: CMakeFiles/FileHasherProg.dir/clean
 CMakeFiles/FileHasherProg.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileHasherProg.dir/build.make CMakeFiles/FileHasherProg.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FileHasherProg.dir/build.make CMakeFiles/FileHasherProg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahdiviomendes/Elsevier-TechnicalTest/FIleHasher/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target FileHasherProg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ahdiviomendes/Elsevier-TechnicalTest/FIleHasher/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target FileHasherProg"
 .PHONY : CMakeFiles/FileHasherProg.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FileHasherProg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahdiviomendes/Elsevier-TechnicalTest/FIleHasher/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahdiviomendes/Elsevier-TechnicalTest/FIleHasher/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FileHasherProg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ahdiviomendes/Elsevier-TechnicalTest/FIleHasher/build/CMakeFiles 0
 .PHONY : CMakeFiles/FileHasherProg.dir/rule

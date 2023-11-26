@@ -10,6 +10,7 @@ add_executable(FileHasherProg
     Hasher/HasherInterface.cpp
     Hasher/MD5/MD5Hasher.cpp
     Hasher/FileHasherManager/FileHasher.cpp
+    Hasher/FileSystem/FileSystem.cpp
 )
 
 # Include directories
